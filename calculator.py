@@ -1,18 +1,20 @@
 def add(a: float, b: float) -> float:
     """Возвращает сумму двух чисел"""
-    pass
+    return a + b
 
 
 def subtract(a: float, b: float) -> float:
     """Возвращает разность a - b"""
-    pass
+    return a - b
 
 
 def multiply(a: float, b: float) -> float:
     """Возвращает произведение"""
-    pass
+    return a * b
 
 
 def divide(a: float, b: float) -> float:
     """Возвращает результат деления a / b, если b ≠ 0"""
-    pass
+    if b == 0:
+        raise ValueError("Cannot divide by zero!")
+    return a / b
